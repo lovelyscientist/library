@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title> Library </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width"> 
+        <link rel="stylesheet" type="text/css" href="style/style.css"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="style/bootstrap/css/bootstrap.min.css">
+
+        <!-- build:js libs-min.js -->
+       
+        <script src="lib/jquery-2.2.1.js"></script> 
+        <script type="text/javascript" src="lib/jspdf.min.js"></script>
+        <script src="lib/underscore-1.8.3.js"></script> 
+        <script src="lib/Mediator.js"></script>  
+        <script src="style/bootstrap/js/bootstrap.min.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js scripts-min.js -->
+        <script src="js/data.js"></script> 
+        <script src="js/templates.js"></script> 
+        <script src="js/views/RequestView.js"></script>
+        <script src="js/views/CreateEditView.js"></script>
+        <script src="js/Controller.js"></script>
+        <script src="js/main.js"></script>
+        <!-- endbuild -->
+  </head>
+    <body>
+    <div id="page">
+    <div>....</div>
+        <div id="main">
+            <div id="menu" class="btn-group btn-group-justified" role="group">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  <i class="fa fa-book fa-2x"></i>  Книги <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li id="book-remove"><a href="#">Удалить книгу  <i class="fa fa-minus-circle"></i></a></li>
+                    <li id="book-all"><a href="#">Все книги</a></li>
+                    <li id="book-sale"><a href="#">Обновить цены</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li id="book-report-author"><a href="#">Отчет (по авторам) <i class="fa fa-download"></i></a></li>
+                    <li id="book-report-alphabet"><a href="#">Отчет (по алфавиту) <i class="fa fa-download"></i></a></li>
+                  </ul>
+                </div>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-users fa-2x"></i>  Читатели <span class="caret">
+                  </span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li id="reader-add"><a href="#">Добавить нового <i class="fa fa-plus-circle"></i></a></li>
+                    <li id="reader-all"><a href="#">Все читатели</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li id="reader-report-phone"><a href="#">Отчет (номера) <i class="fa fa-download"></i> </a></li>
+                  </ul>
+                </div>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  <i class="fa fa-envelope-o fa-2x"></i>  Заказы <span class="caret">
+                  </span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li id="order-all"><a href="#">Все заказы</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li id="order-report-current"><a href="#">Отчет (текущие) <i class="fa fa-download"></i> </a></li>
+                  </ul>
+                </div>
+            </div>
+            <div id="content">
+              <h2 class="hh">Добро пожаловать в базу данных Библиотека!</h2>
+              <h3>Данная база содержит следующие Таблицы:</h3>
+              <div class="firstRender">
+                    <p> Книги  <i class="fa fa-book fa"></i></p>
+                    <p> Читатели <i class="fa fa-users fa"></i></p>
+                    <p> Заказы  <i class="fa fa-envelope-o fa"></i></p>
+              </div>
+               <h4 class="text">
+                   Для быстрого доступа к телефонному справочнику читателей перейдите в меню Читатели -> Отчет(номера)
+              </h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

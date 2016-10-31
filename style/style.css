@@ -1,0 +1,57 @@
+#page{
+    width: 100%;
+    height: 107%;
+    margin-top: -50px;
+    background-color: #c6e2ff;
+    font-family: 'TimesNewRoman';
+    font-size: 16px;
+}
+.hh{
+    margin-top: 40px;
+}
+.firstRender{
+    font-size: 25px;
+    font-family: 'TimesNewRoman';
+}
+.text {
+      font-size: 20px;
+}
+#main {
+    margin: 5% auto;
+    margin-top: 60px;
+    width:70%;
+    text-align: center;
+    border-color: #6195cc;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+}
+.createEdit {
+    width: 70%;
+    margin: auto;
+}
+html, body{
+  height:100%;
+}
+#menu {
+    width: 100%;
+    padding: 5px;
+    display: block;
+    vertical-align:middle;
+}
+#ok{
+    margin-left: 20%;
+}
+#content {
+    width: 99%;
+    height: 100%;
+    font-style: italic;
+    display: block;
+    border-color: #6195cc;
+    border-style: dotted;
+    vertical-align:middle;
+    padding: 10px;
+    margin: 12px auto;
+}
+ 
