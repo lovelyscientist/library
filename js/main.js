@@ -5,6 +5,7 @@ var mediator = new Mediator(),
 
 ajax.addEventListener('readystatechange', function () {
 	if (ajax.readyState === 4 && ajax.status === 200) {
+		console.log(ajax.responseText);
 		var array = JSON.parse(ajax.responseText);
 		
 		if (array.length === 0 && !withoutData) name = name + ' not found!';
