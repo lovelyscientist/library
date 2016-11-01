@@ -5,11 +5,7 @@ require_once('LibraryClass.php');
 if (strpos($_SERVER['REQUEST_URI'],'.') === false) {
 	$library = new LibraryDatabase();
 	
-	$library->createSet();
-	$library->defineSqlRequest();
-	$library->getData();
-	$library->returnResult();
-	$library->closeConnection();
+	$library->createSet()->defineSqlRequest()->getData()->returnResult()->closeConnection();
 
 	return true;
 }

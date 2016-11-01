@@ -32,6 +32,8 @@ class LibraryDatabase {
 			$this->set = $set;
 			$this->percent = $percent;
 		}
+
+		return $this;
 	}
 
 	public function defineSqlRequest() {
@@ -49,10 +51,12 @@ class LibraryDatabase {
 		}
 
 		$this->sql = $sql;
+		return $this;
 	}
 
 	public function getData() {
 		$this->result = $this->dbConnection->query($this->sql);
+		return $this;
 	}
 	
 	public function returnResult() {
@@ -65,6 +69,7 @@ class LibraryDatabase {
 		}  else {
 		  echo '[]';
 		}
+		return $this;
 	}
 
 	public function closeConnection() {
